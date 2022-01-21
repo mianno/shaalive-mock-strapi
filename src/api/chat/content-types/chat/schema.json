@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chats",
+  "info": {
+    "singularName": "chat",
+    "pluralName": "chats",
+    "displayName": "chat",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "event_id": {
+      "pluginOptions": {},
+      "type": "biginteger",
+      "unique": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "support",
+        "room"
+      ]
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "mainColor": {
+      "type": "string"
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "bottomLeft",
+        "bottomCenter",
+        "bottomRight",
+        "topLeft",
+        "topCenter",
+        "topRight"
+      ]
+    },
+    "messages": {
+      "type": "json"
+    },
+    "title": {
+      "type": "string",
+      "default": "CHAT"
+    },
+    "invitation": {
+      "type": "string",
+      "default": "inserisci la tua domanda"
+    }
+  }
+}

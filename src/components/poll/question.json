@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_poll_questions",
+  "info": {
+    "displayName": "question",
+    "icon": "robot"
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "count": {
+      "type": "integer"
+    }
+  }
+}

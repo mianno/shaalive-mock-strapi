@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "polls",
+  "info": {
+    "singularName": "poll",
+    "pluralName": "polls",
+    "displayName": "poll",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "event_id": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "poll",
+        "survey"
+      ]
+    },
+    "graphType": {
+      "type": "enumeration",
+      "enum": [
+        "horizontalBar",
+        "bar",
+        "pie"
+      ],
+      "default": "horizontalBar"
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "questions": {
+      "type": "json"
+    },
+    "saveAs": {
+      "type": "enumeration",
+      "enum": [
+        "only_count",
+        "event_subscription_attrs"
+      ]
+    }
+  }
+}

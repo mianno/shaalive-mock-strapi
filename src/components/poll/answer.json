@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_poll_answers",
+  "info": {
+    "displayName": "answer",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "count": {
+      "type": "integer"
+    },
+    "key": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "event": {
+      "type": "string"
+    },
+    "question_key": {
+      "type": "string"
+    }
+  }
+}
