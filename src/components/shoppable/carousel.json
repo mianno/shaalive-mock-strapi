@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shoppable_carousels",
+  "info": {
+    "displayName": "carousel",
+    "icon": "photo-video"
+  },
+  "options": {},
+  "attributes": {
+    "enabled": {
+      "type": "boolean"
+    },
+    "dimensions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "interaction.dimensions"
+    },
+    "position": {
+      "type": "component",
+      "repeatable": false,
+      "component": "interaction.position"
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "horizontal",
+        "vertical",
+        "grid",
+        "followMajorDimension"
+      ]
+    }
+  }
+}

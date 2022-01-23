@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shoppables",
+  "info": {
+    "singularName": "shoppable",
+    "pluralName": "shoppables",
+    "displayName": "shoppable",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "event_id": {
+      "type": "biginteger",
+      "required": true
+    },
+    "ecommerceType": {
+      "type": "enumeration",
+      "enum": [
+        "unknown",
+        "magento",
+        "shopify",
+        "woocommerce"
+      ]
+    },
+    "layout": {
+      "type": "json"
+    },
+    "carousel": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shoppable.carousel"
+    },
+    "coupon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shoppable.coupon"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_interaction_dimensions",
+  "info": {
+    "displayName": "dimensions",
+    "icon": "border-style"
+  },
+  "options": {},
+  "attributes": {
+    "width": {
+      "type": "float"
+    },
+    "height": {
+      "type": "float"
+    },
+    "width_unit": {
+      "type": "string",
+      "default": "%"
+    },
+    "height_unit": {
+      "type": "string",
+      "default": "%"
+    }
+  }
+}

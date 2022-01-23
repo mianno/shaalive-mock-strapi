@@ -2,7 +2,8 @@
   "collectionName": "components_poll_answers",
   "info": {
     "displayName": "answer",
-    "icon": "allergies"
+    "icon": "allergies",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -17,10 +18,14 @@
       "required": true,
       "unique": true
     },
-    "event": {
+    "question_key": {
       "type": "string"
     },
-    "question_key": {
+    "event_id": {
+      "type": "biginteger",
+      "required": true
+    },
+    "color": {
       "type": "string"
     }
   }

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_interaction_positions",
+  "info": {
+    "displayName": "position",
+    "icon": "crosshairs"
+  },
+  "options": {},
+  "attributes": {
+    "left": {
+      "type": "float"
+    },
+    "top": {
+      "type": "float"
+    },
+    "top_unit": {
+      "type": "string",
+      "default": "%"
+    },
+    "left_unit": {
+      "type": "string",
+      "default": "%"
+    }
+  }
+}

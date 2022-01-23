@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shoppable_coupons",
+  "info": {
+    "displayName": "coupon",
+    "icon": "audio-description"
+  },
+  "options": {},
+  "attributes": {
+    "code": {
+      "type": "string"
+    },
+    "BackgroundImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "dimensions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "interaction.dimensions"
+    },
+    "position": {
+      "type": "component",
+      "repeatable": false,
+      "component": "interaction.position"
+    }
+  }
+}

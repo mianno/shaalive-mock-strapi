@@ -37,15 +37,22 @@
       "type": "boolean",
       "default": false
     },
-    "questions": {
-      "type": "json"
-    },
     "saveAs": {
       "type": "enumeration",
       "enum": [
         "only_count",
         "event_subscription_attrs"
       ]
+    },
+    "question": {
+      "type": "component",
+      "repeatable": false,
+      "component": "poll.question"
+    },
+    "answers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "poll.answer"
     }
   }
 }

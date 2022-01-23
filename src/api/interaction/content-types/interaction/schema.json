@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "interactions",
+  "info": {
+    "singularName": "interaction",
+    "pluralName": "interactions",
+    "displayName": "interaction"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "event_id": {
+      "type": "biginteger",
+      "required": true
+    },
+    "htmlContent": {
+      "type": "richtext"
+    },
+    "position": {
+      "type": "json"
+    },
+    "dimension": {
+      "type": "json"
+    },
+    "vodtimeline": {
+      "type": "json"
+    },
+    "show_effect": {
+      "type": "json"
+    },
+    "hide_effect": {
+      "type": "json"
+    }
+  }
+}

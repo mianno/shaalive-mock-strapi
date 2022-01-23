@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "history_items",
+  "info": {
+    "singularName": "history-item",
+    "pluralName": "history-items",
+    "displayName": "history-item"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "event_id": {
+      "type": "biginteger",
+      "unique": false,
+      "required": true
+    },
+    "user_id": {
+      "type": "biginteger",
+      "required": true
+    },
+    "event_type": {
+      "type": "enumeration",
+      "enum": [
+        "connect",
+        "poll",
+        "shoppable",
+        "interaction",
+        "chat"
+      ]
+    },
+    "when": {
+      "type": "datetime",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "generic",
+        "like",
+        "join",
+        "leave",
+        "timeout",
+        "clickbanner",
+        "buy",
+        "viewproduct"
+      ],
+      "default": "generic"
+    }
+  }
+}
